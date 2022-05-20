@@ -24,6 +24,9 @@ int prime(int n){
         return 0;
     }
     for(i=0;i<sizeof(primes)/sizeof(int);i++){
+        // sizeof(int)=4
+        // sizeof(primes)=20
+        // sizeof(primes)/sizeof(int)=5
         if(n==primes[i]){
             return 1;
         }else if(n%primes[i]==0){
